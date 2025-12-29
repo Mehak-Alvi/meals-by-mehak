@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MealsbyMehak</title>
+</head>
+<!--this is first page-->
+<style>
+    .navbar h2{
+        color: black;
+        font-family: sans-serif;
+        text-align: center;
+    }
+    .navbar b{
+        color: yellow;
+    }
+    button{
+        float: right;
+        margin: 10px;
+        cursor: pointer;
+        font-weight: 600;
+    }
+    .signin{
+        background: transparent;
+        border: none;
+        position: relative;
+        bottom: 50px;
+    }
+    .signup{
+        background-color: yellow;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        position: relative;
+        bottom: 50px;
+    }
+    .navbar ul{
+        list-style-type: none;
+        overflow: hidden;
+        background-color: orangered;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        height: 75px;
+    }
+    .navbar a{
+        color: white;
+        text-decoration: none;
+        padding: 25px;
+        display: block;
+        text-align: center;
+    }
+    .navbar a:hover{
+        background-color: hsl(0, 0%, 10%);
+    }
+    .navbar li{
+        float: left;
+    }
+    body{
+         margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+       
+        text-align: center;
+        background-color: antiquewhite;
+    }
+    main{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .pic{
+        background-image: url(Gemini_Generated_Image_ke6ql6ke6ql6ke6q.png);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-size: cover;
+        background-position: bottom;
+        height: 680px;
+    }
+    h1{
+        color: white;
+        font-family: sans-serif;
+        font-weight: bolder;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    h1::before{
+        content: "";
+        flex: 1;
+        margin: 0 15px;
+        height: 8px;
+        background-color: white;
+        border-right: 8px solid white;
+        border-radius: 50%;
+    }
+    h1::after{
+         content: "";
+        flex: 1;
+        margin: 0 15px;
+        height: 8px;
+        background-color: white;
+        border-right: 8px solid white;
+        border-radius: 50%;
+    }
+    .inside img{
+       height: 350px;
+       display: flex;
+       flex-direction: column;
+       margin-left: 30px;
+       width: 570px;
+    }
+    .second{
+        height: 370px;
+        float: right;
+        width: 540px;
+        margin-right: 30px;
+        display: flex;
+        margin-top: -575px;
+        flex-direction: column;
+        align-items: center;
+        float: right;
+    }
+    .second img{
+        width: 540px;
+        margin-right: 30px;
+    }
+    .sec{
+        color: white;
+        text-align: left;
+        margin-top: 10px;
+        font-size: 1.0rem;
+
+    }
+    .deal{
+        text-align: left;
+        color: white;
+        font-family: sans-serif;
+        width: 540px;
+        margin-bottom: 10px;
+    }
+    .deal2{
+        text-align: left;
+        color: white;
+        font-family: sans-serif;
+        width: 520px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+    }
+    .firs{
+        text-align: left;
+        margin-top: 20px;
+        color: white;
+        font-size: 1.0rem;
+        width: 500px;
+        margin-left: 30px;
+    }
+</style>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="contact.html">Contact info</a></li>
+            <h2>MealsBy<b>Mehak</b></h2>
+            <button class="signin">Sign In</button>
+             <button class="signup">Sign Up</button>
+        </ul>
+    </nav>
+    <div class="pic">
+    <h1>Deals & Combos</h1>
+        <div class=inside>
+            <div class="first">
+                <h2 class="deal2">Kabab+Biryani
+                    <br>PKR 550
+                </h2>
+                <div class="imagee">
+  <img src="Gemini_Generated_Image_z2crj1z2crj1z2cr.png" alt="inside">
+                </div>
+                <p class="firs">Indulge in the ultimate comfort meal from Meals By Mehak! This deal features our signature Basmati Biryani, slow-cooked to perfection with a blend of aromatic spices and tender meat that falls off the bone. We’ve paired it with our famous Seekh Kababs,flame-grilled to stay juicy on the inside with a perfect charred finish on the outside.Served alongside fresh greens and cooling raita.</p>
+            </div>
+            <div class="second">
+                <h2 class="deal">Kabab+Mutton Karahi+Grilled Chicken
+                                 <br>PKR 3000
+                </h2>    
+              <div class="imagee">
+               <img src="gemini.png">
+              </div>
+               <p class=sec>Treat yourself to the ultimate Feast Combo from
+                               Meals By Mehak!This satisfying deal features spicy Mutton Karahi,a generous platter of succulent Seekh Kababs and a plate of perfectly charred,zesty Grilled Chicken. </p> 
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

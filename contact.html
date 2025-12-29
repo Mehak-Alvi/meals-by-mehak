@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MealsbyMehak</title>
+</head>
+<!--this is first page-->
+<style>
+    .navbar h2{
+        color: black;
+        font-family: sans-serif;
+        text-align: center;
+    }
+    .navbar b{
+        color: yellow;
+    }
+    button{
+        float: right;
+        margin: 10px;
+        cursor: pointer;
+        font-weight: 600;
+    }
+    .signin{
+        background: transparent;
+        border: none;
+        position: relative;
+        bottom: 50px;
+    }
+    .signup{
+        background-color: yellow;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        position: relative;
+        bottom: 50px;
+    }
+    .navbar ul{
+        list-style-type: none;
+        overflow: hidden;
+        background-color: orangered;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        height: 75px;
+    }
+    .navbar a{
+        color: white;
+        text-decoration: none;
+        padding: 25px;
+        display: block;
+        text-align: center;
+    }
+    .navbar a:hover{
+        background-color: hsl(0, 0%, 10%);
+    }
+    .navbar li{
+        float: left;
+    }
+    body{
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+       
+        text-align: center;
+        background-color: antiquewhite;
+    }
+    main{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .container{
+        width: 100%;
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px;
+        margin-top: 160px;
+        margin-bottom: 10px;
+    }
+    .container h1{
+        text-align: center;
+        margin-bottom: 5px;
+        color: orangered;
+    }
+    form input:focus,
+    form textarea:focus{
+        outline: NONE;
+        box-shadow: 0 0 5px red;
+    }
+    form input,
+    form textarea{
+        display: block;
+        width: 98%;
+        margin-bottom: 10px;
+        padding: 5px;
+        border-color: black;
+        background-color: lightgrey;
+        border-radius: 5px;
+        padding-bottom: 20px;
+    }
+    form button{
+        display: block;
+        width: 98%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    form button:hover{
+        background-color: gray;
+    }
+     .pic{
+        background-image: url(place.png);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        color: white;
+        text-align: center;
+    }
+    .heading{
+        position: absolute;
+        display: inline-block;
+        text-align: center;
+        margin-left: 600px;
+    }
+    .heading::after{
+        content: "";
+       display: block;
+        background-color: black;
+        height: 5px;
+        width: 100%;
+        bottom: -10px;
+    }
+    label{
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+        color: black;
+        font-size: 16px;
+        float: left;
+    }
+    textarea{
+        height: 100px;
+        border: 2px solid black;
+        padding: 10px;
+       font-family: arial,sans-serif;
+    }
+</style>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="contact.html">Contact info</a></li>
+             <h2>MealsBy<b>Mehak</b></h2>
+             <button class="signin">Sign In</button>
+             <button class="signup">Sign Up</button>
+        </ul>
+    </nav>
+    <div class="pic"><h1 class="heading">GET IN TOUCH</h1>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form onsubmit="return validateForm()">
+            <label for="name">Name</label>
+            <input type="text" id="name"placeholder="Your Name">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your Email">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    </div>
+    <script src="valid.JS"></script>
+</body>
+</html>

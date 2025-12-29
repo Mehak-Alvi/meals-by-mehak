@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MealsbyMehak</title>
+</head>
+<!--this is first page-->
+<style>
+    .navbar h2{
+        color: black;
+        font-family: sans-serif;
+        text-align: center;
+    }
+    .navbar b{
+        color: yellow;
+    }
+    .navbar ul{
+        list-style-type: none;
+        overflow: hidden;
+        background-color: orangered;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        height: 75px;
+    }
+    .navbar a{
+        color: white;
+        text-decoration: none;
+        padding: 25px;
+        display: block;
+        text-align: center;
+    }
+    button{
+        float: right;
+        margin: 10px;
+        cursor: pointer;
+        font-weight: 600;
+    }
+    .signin{
+        background: transparent;
+        border: none;
+        position: relative;
+        bottom: 50px;
+    }
+    .signup{
+        background-color: yellow;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        position: relative;
+        bottom: 50px;
+    }
+    .navbar a:hover{
+        background-color: hsl(0, 0%, 10%);
+    }
+    .navbar li{
+        float: left;
+    }
+    main{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    h1{
+        text-align: center;
+    }
+    
+    body{
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+       
+        text-align: center;
+        background-color: antiquewhite;
+    }
+    h1::after{
+        content: '';
+        display: block;
+        background-color: black;
+        height: 3px;
+        width: 100%;
+        margin-top: 20px;
+    }
+    h1::before{
+        content: '';
+        display: block;
+        background-color: black;
+        height: 3px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .Nashta{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        gap: 5rem;
+        text-align: left;
+    }
+    .Nashta img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        gap: 5rem;
+        justify-content: center;
+    }
+    .Lunch img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        gap: 5rem;
+        justify-content: center;
+    }
+    .Lunch{
+         width: 100%;
+        display: flex;
+        flex-direction: row;
+       gap: 5rem;
+       text-align: left;
+    }
+    .Dinner{
+         width: 100%;
+        display: flex;
+        flex-direction: row;
+       gap: 5rem;
+       text-align: left;
+    }
+    .Dinner img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        gap: 5rem;
+        justify-content: center;
+    }
+    .Nash{
+        color: white;
+        border: 2px;
+        background-color: orangered;
+        font-weight: bold;
+        margin-bottom: 15px;
+        clip-path: polygon(0% 0,100% 0,98% 50%,100% 100%,0% 100%);
+        padding: 5px;
+        text-align: center;
+    }
+    .price{
+        font-weight: bold;
+        font-size: 20px;
+    }
+</style>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="contact.html">Contact info</a></li>
+             <h2>MealsBy<b>Mehak</b></h2>
+              <button class="signin">Sign In</button>
+             <button class="signup">Sign Up</button>
+        </ul>
+    </nav>
+ <h1>OUR MENU</h1>
+         <h2 class="Nash">Breakfast/Nashta</h2>
+        <div class="Nashta">
+            <div>
+                <h3>Aloo Paratha</h3>
+                <img src="alooparatha.png" alt="Aloo Paratha">
+                <span class="price">150 PKR</span>
+                <p>Our Aloo Paratha is freshly made, stuffed with a flavorful potato filling and served hot with cool, creamy raita, it creates a perfect balance of taste and texture.</p>
+            </div>
+            <div>
+                <h3>Halwa Puri</h3>
+                <img src="halwapuri.png" alt="Halwa Puri">
+                <span class="price">250 PKR</span>
+                <p>Our Halwa Puri is freshly prepared with fluffy puris and rich, aromatic suji halwa.Served with traditional chana curry, it offers a perfect balance of sweet and savory flavors.</p>
+            </div>
+            <div>
+                <h3>Omelette</h3>
+                <img src="omelette.png" alt="Omelette">
+                <span class="price">75 PKR</span>
+                <p>Our Omelette is made fresh with farm eggs, lightly seasoned and cooked to soft, fluffy perfection.Enhanced with onions, green chilies, and fresh herbs for a flavorful bite.</p> 
+            </div>
+            <div>
+                <h3>Murgh Chanay</h3>
+                <img src="Murgh Chanay.png" alt="Murgh Chanay">
+                <span class="price">150 PKR</span>
+                <p>Murgh Chanay:wholesome curry made with tender chicken and soft chickpeas simmered in a rich, spiced gravy.Cooked with onions, tomatoes, ginger, garlic, and traditional desi masalas.</p>
+            </div>
+            <div>
+                <h3>Paaye</h3>
+                <img src="Paaye.png" alt="Paaye">
+                <span class="price">250 PKR</span>
+                <p>Our Paaye is slow-cooked for hours to bring out a deep, rich flavor and perfectly tender texture.Prepared with fresh ingredients and traditional desi spices, it offers an authentic, comforting taste.</p>
+            </div>      
+        </div>
+        <br>
+        <h2 class="Nash">Lunch</h2>
+        <div class="Lunch">
+            <div>
+                <h3>Kabuli Pulao</h3>
+                <img src="kabulipulao.png" alt="Kabuli Pulao">
+                <span class="price">450 pkr</span>
+                <p>Our Kabuli Pulao is a fragrant blend of basmati rice, tender meat, and a mix of sweet and savory spices. Topped with golden carrots, plump raisins, and crunchy nuts for a perfect balance of flavors.</p>
+            </div>
+            <div>
+                <h3>Aloo Keema</h3>
+                 <img src="alookeema.png" alt="Aloo Keema">
+                <span class="price">200 PKR</span>
+                <p>Our Aloo Keema beautifully blends minced meat and tender potatoes in a rich, spiced gravy. The keema is slow-cooked with onions, tomatoes, ginger, and garlic until it becomes juicy and flavorful, while the potatoes soak up all the aromatic masalas.</p>
+            </div>
+            <div>
+                <h3>Pulao and Kabab</h3>
+                <img src="pulaokabab.png" alt="Pulao and Kabab">
+                <span class="price">350 PKR</span>
+                <p>Our Matar Pulao is cooked to perfection with tender green peas and fragrant spices. Served with our signature juicy Chapli Kabab, bursting with traditional flavors. A delightful meal that warms the soul with every bite.</p>
+            </div>
+            <div>
+                <h3>Daal Chawal</h3>
+                <img src="daalchawal.png" alt="Daal Chawal">
+                <span class="price">150 PKR</span>
+                <p>Our Daal Chawal features perfectly cooked lentils simmered with aromatic spices, served with fluffy, fragrant rice. Accompanied by fresh, crisp Pyaz Salad for a refreshing crunch.</p>
+            </div>
+            <div>
+                <h3>Curry Pakora</h3>
+                <img src="Curry Pakora.png" alt="Curry Pakora">
+                <span class="price">100 PKR</span>
+                <p>Our Curry Pakora is made with golden, crispy fritters simmered in a rich, flavorful gravy. Served with perfectly boiled, fluffy rice to soak up every bit of the sauce. A comforting and satisfying meal full of traditional taste.</p>
+            </div>
+        </div>
+        <br>
+        <h2 class="Nash">Dinner</h2>
+        <div class="Dinner">
+            <div>
+                <h3>Biryani</h3>
+                <img src="briyani.png" alt="Biryani">
+                <span class="price">450 PKR</span>
+                <p>Our Biryani is a fragrant, flavorful mix of basmati rice and tender meat, layered with aromatic spices. Garnished with fried onions and fresh herbs for the perfect finishing touch. A classic dish that delights every palate</p>
+            </div>
+            <div>
+                <h3>Fried Fish</h3>
+                <img src="fried fish.png">
+                <span class="price">500 PKR</span>
+                <p>Our Fried Fish is crispy on the outside, tender and juicy on the inside. Lightly spiced for maximum flavor and served hot for a satisfying crunch. A perfect seafood indulgence.</p>
+            </div>
+            <div>
+                <h3>Grilled Chicken</h3>
+                <img src="grilled chicken.png">
+                <span class="price">500 PKR</span>
+                <p>Our Grilled Chicken is marinated in aromatic spices and grilled to perfection. Juicy, smoky, and full of flavor with every bite. A healthy and delicious choice for meat lovers</p>
+            </div>
+            <div>
+                <h3>Seekh Kabab</h3>
+                <img src="seekh kabab.png">
+                <span class="price">200 PKR</span>
+                <p>Our Seekh Kababs are juicy, spiced minced meat skewers, grilled to perfection. Bursting with traditional flavors and served hot off the grill. A delicious treat for every kabab enthusiast.</p>
+            </div>
+            <div>
+                <h3>Mutton Karahi</h3>
+                <img src="mutton karahi.png">
+                <span class="price">2500 PKR</span>
+                <p>Our Mutton Karahi features tender chunks of mutton cooked in a spicy, aromatic tomato-based gravy. Finished with fresh green chilies and coriander for an authentic taste. A hearty, flavor-packed dish perfect for meat lovers</p>
+            </div>
+        </div>
+</body>
+</html>
